@@ -1,0 +1,65 @@
+/* import Google Font */
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #E3f2fd;
+}
+
+.wrapper {
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    border-radius: 5px;
+    background: #293447;
+}
+
+.game-details {
+    color: #B8C6DC;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.play-board {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr); /* 30 rows and 30 columns */
+    background: #212837;
+}
+
+.play-board .food {
+    background: #ff1307;
+}
+
+.play-board .head {
+    background: #045968;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls i {
+    color: #B8C6DC;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 1.3rem;
+    width: calc(100% / 4);
+    border-right: 1px solid #171b26;
+}
